@@ -33,9 +33,6 @@ package-lock.json
 */cache/
 */community_descriptions/*
 
-# Konfiguration, wenn sensible Daten drin sind
-frontend/config/
-
 # Logs & Backups
 **/app.log
 **/backups/
