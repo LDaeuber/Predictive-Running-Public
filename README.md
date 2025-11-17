@@ -18,10 +18,21 @@ Das Frontend wurde mit **React** und **TypeScript** entwickelt und bietet eine i
     * Ausgewählte Strecken werden an das Backend gesendet, um eine **prognostizierte Laufzeit** vom Machine-Learning-Modell zu erhalten.
 
 * **Analyse historischer Daten:**
-    * Bereits absolvierte Läufe werden in einer Tabelle angezeigt.
+    * Bereits absolvierte Läufe werden in einer Ansicht aufbereitet dargestellt.
+    * Folgende Daten werden visualisiert:
+         * Time
+         * Distance
+         * Pace
+         * Max Elevation
+         * Gained Elevation
+         * Windspeed
+         * Daytime, Weekday and season
+         * Temperature
+         * Max - and average heartrate
+         * Prediction for this specific run 
     * Die Daten können nach verschiedenen Attributen **auf- oder absteigend sortiert** werden:
-        * Distanz
-        * Zeit
+        * Distance
+        * Time
         * Pace
         * Prediction
 
