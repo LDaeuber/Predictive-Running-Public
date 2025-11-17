@@ -1,0 +1,11 @@
+# Bytecode
+__pycache__/
+*.pyc
+
+# Virtuelle Umgebungen
+.venv/
+venv/
+
+# Sonstiges
+.git
+.vscode

@@ -1,0 +1,50 @@
+# Projekt-spezifische Dateien
+/scripts/activities.csv
+/backend/app/prediction_service/app/data/activities.csv
+
+# Environment Files
+**/.env
+/.env
+
+# Python
+**/__pycache__/
+*.pyc
+**/.ipynb_checkpoints/*
+
+# IDE - VSCode
+.vscode
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# IDE - PyCharm
+**/.idea/*
+
+# NodeJS / NextJS
+node_modules/
+frontend/node_modules/
+package-lock.json
+*/.next/*
+
+# Projektbezogene Build-Ordner / Cache
+*/server/
+*/static/
+*/cache/
+*/community_descriptions/*
+
+# Konfiguration, wenn sensible Daten drin sind
+frontend/config/
+
+# Logs & Backups
+**/app.log
+**/backups/
+
+# MacOS
+.DS_Store
+
+# History (z.B. VSCode Extension History)
+.history/*
+
+# Virtuelle Python-Umgebung
+.venv/

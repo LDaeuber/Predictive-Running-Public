@@ -1,0 +1,31 @@
+name: predictive_running
+
+services:
+  backend:
+    build: ./backend
+    container_name: predictive_running_backend
+    ports:
+      - "8080:8080"
+    environment:
+      - PRODUCTION=false
+    volumes:
+      - ./backend/app/:/usr/src/app
+    working_dir: /usr/src/app
+
+  frontend:
+    container_name: predictive_running_frontend
+    image: predictive_running_frontend:latest
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    environment:
+      - NEXT_TELEMETRY_DISABLED=1
+      - PRODUCTION=false
+      - BACKEND_URL=http://backend:8080
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    depends_on:
+      - backend
