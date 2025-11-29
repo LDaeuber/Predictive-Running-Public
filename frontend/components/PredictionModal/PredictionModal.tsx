@@ -177,16 +177,6 @@ const PredictionModal: React.FC<PredictionModalProps> = ({
                           <div className="grid grid-cols-3 gap-2 text-center text-xs mt-1">
                             <StatBlock
                               icon={
-                                <ArrowUpToLine
-                                  size={20}
-                                  className="text-blue-400"
-                                />
-                              }
-                              value={`${run.run.elev_high.toFixed(0)} m`}
-                              label="max height"
-                            />
-                            <StatBlock
-                              icon={
                                 <ArrowDownToLine
                                   size={20}
                                   className="text-blue-400"
@@ -194,6 +184,16 @@ const PredictionModal: React.FC<PredictionModalProps> = ({
                               }
                               value={`${run.run.elev_low.toFixed(0)} m`}
                               label="min height"
+                            />
+                            <StatBlock
+                              icon={
+                                <ArrowUpToLine
+                                  size={20}
+                                  className="text-blue-400"
+                                />
+                              }
+                              value={`${run.run.elev_high.toFixed(0)} m`}
+                              label="max height"
                             />
                             <StatBlock
                               icon={

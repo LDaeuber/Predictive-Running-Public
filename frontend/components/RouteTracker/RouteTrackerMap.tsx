@@ -180,21 +180,21 @@ export default function RouteTrackerMap({
     <div className="w-full h-full flex flex-col">
       <div className="relative p-4 bg-[#121212] text-zinc-50 grid grid-cols-3 gap-4 items-center">
         <div>
-          <strong>Distanz: </strong>
+          <strong>Distance: </strong>
           <span className="text-[#9B5DE0]">
             {route?.distanceDisplay ?? "-"}
           </span>
         </div>
 
         <div>
-          <strong>Min. Höhe: </strong>
+          <strong>Min. Height: </strong>
           <span className="text-[#9B5DE0]">
             {route ? `${route.minElevation.toFixed(2)} m` : "-"}
           </span>
         </div>
 
         <div>
-          <strong>Max. Höhe: </strong>
+          <strong>Max. Height: </strong>
           <span className="text-[#9B5DE0]">
             {route ? `${route.maxElevation.toFixed(2)} m` : "-"}
           </span>
